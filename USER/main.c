@@ -21,7 +21,7 @@ int main (void)
 	while(1)
 	{
 		USART_SendData(USART1,0x05);
-		delay_ms(1000);	
+		delay_ms(100);	
 	}	
 }	
 
