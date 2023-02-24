@@ -13,13 +13,14 @@ int main (void)
 	LED_Init();							// LED初始化
 	OLED_Init();						// OLED初始化
 	delay_ms(1000);					// 等待其他设备初始化就绪
+	uart1_init(115200);
 	
 /**********************************************/
 
 	OLED_ShowString(0,0,"Hellow Word");
 	while(1)
 	{
-
+		USART_SendData(USART1,0x05);
 		delay_ms(1000);	
 	}	
 }	

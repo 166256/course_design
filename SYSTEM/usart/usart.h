@@ -5,7 +5,7 @@
 
 
 
-void uart_init(u32 bound);
+void uart1_init(u32 bound);
 #endif
 
 
